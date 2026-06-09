@@ -1,0 +1,5 @@
+-Usa a funcao jogar para sortear um número aleatório
+-Identifica o nível escolhido pelo player e gera o "numero_secreto" 
+-Player tenta adivinhar o número de acordo com o tanto de tentativas dadas pelo o nível 
+-Calcula e mostra se o número que o player escolheu é = < ou > que o "numero_secreto" e dá a resposta.
+-Se o player ganhar, o print é "venceu!", mas se perder o "numero_secreto" é identficado e mostrado ao player.
