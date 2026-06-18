@@ -1,6 +1,7 @@
 ## Data: 18/06/2026
 ## Jogo: Pedra-Papel-Tesoura
 ## Disciplina: PCAP
+## Aluno: Benício Cordeiro
 
 # Como jogar:
 
@@ -58,5 +59,3 @@ O jogo funciona ............: ppt.py, linha 9 a 53
 Trabalho com texto .........: ppt.py, linha 34(.lower().strip())
 Documentação e Git .........: README.md criado e commits realizados no GitHub
 Extensão/originalidade .....: ppt.py, linhas 24 a 26 Adaptação para ter opção jogar novamente
-
-## Autor: Benício Cordeiro
