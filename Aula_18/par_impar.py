@@ -69,9 +69,9 @@ def main():
         vencedor = jogar()
 
         if vencedor == "Jogador":
-            jogador =+ 1
+            jogador += 1
         else:
-            maquina =+ 1
+            maquina += 1
 
         print("Placar:", jogador, "x", maquina, "\n")
 

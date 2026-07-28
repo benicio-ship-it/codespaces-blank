@@ -1,0 +1,10 @@
+1. Crie diretório revisao == mkdir
+2. Crie um arquivo no diretório revisão com nome revisaoPython.py == code
+3. Fundamentos de Programação
+    1. Váriaveis e tipos de dados
+    2. Operadores
+    3. Entrada de dados
+    4. Saida de dados
+    5. estrutura de repetição
+    6. Estrutura de condição
+    7. Sub-rotinas
