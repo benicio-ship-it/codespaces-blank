@@ -4,7 +4,7 @@
 # Aula       : 20
 # Autor      : Benicio Cordeiro
 # Data       : 04/08/2026
-# Conceitos  : Depois do que
+# Conceitos  : 
 # ==============================================================
 
 # Definição da Moldura Characteres e Tamanho
