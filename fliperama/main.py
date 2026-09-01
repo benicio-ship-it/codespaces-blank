@@ -1,50 +1,67 @@
-# ==============================================================
-# ARQUIVO    : main.py
-# Disciplina : 2026-PCAP
-# Aula       : 20
-# Autor      : Benicio Cordeiro
-# Data       : 04/08/2026
-# Conceitos  : 
-# ==============================================================
+# =======================================
+# Arquivo:       main.py
+# Disciplina:   2026-PCAP
+# Aula:         20
+# Autor:        Benício Cordeiro
+# Data:         2026.08.04
+# Conceitos:    Menu principal, gerenciamento de estado e fluxo do app
+# =======================================
 
 from telas import titulo, linha
 from adivinhe import jogar_adivinhe
 from ppt import jogar_ppt
+from parimpar import jogar_parimpar
+from toupeira import jogar_toupeira
 from modulos import ler_opcao
 from placar import salvar_placar, carregar_placar
+from jogadores import menu_jogadores, salvar_jogadores, carregar_jogadores
 
-NOME_DO_DONO = "NORMAL🕹️"
-NOME_DOS_JOGOS = ["Adivinhe o Numero", "Pedra-Papel-Tesoura"]
-OPCOES = ["0", "1", "2"]
+NOME_DO_DONO = 'BENICIO'
+NOMES_DOS_JOGOS = ['Adivinhe o Numero', 'Pedra-Papel-Tesoura', 'Par ou Impar', 'Caça a Toupeira']
+
 vezes_jogado = carregar_placar()
+jogadores = carregar_jogadores()
 
-print(carregar_placar())
 
 def mostrar_placar():
-    titulo("PLACAR")
-    for i in range(3):
-        print(NOME_DOS_JOGOS[i] + ": " + str(vezes_jogado[i]) + "x")
+    titulo('PLACAR')
+    for i in range(len(NOMES_DOS_JOGOS)):
+        print(NOMES_DOS_JOGOS[i] + ': ' + str(vezes_jogado[i]) + 'x')
+    linha()
+
 
 while True:
-    titulo('🕹️  FLIPERAMA ' + NOME_DO_DONO)
+    titulo('FLIPERAMA DO ' + NOME_DO_DONO)
+    print('5 - Jogadores')
+    print('4 - Caça a Toupeira')
+    print('3 - Par ou Ímpar')
+    print('2 - Pedra - Papel - Tesoura')
     print('1 - Jogo Adivinhe o Número')
-    print('2 - Jogo Pedra, Papel e Tesoura')
-    print('0 - Sair')
+    print('0 - Sair do Fliperama')
     linha()
-    opcao = input('Escolha uma opção: ').strip()
+
+    opcao = ler_opcao('Escolha uma opção', ['0', '1', '2', '3', '4', '5'])
 
     if opcao == '0':
         mostrar_placar()
         salvar_placar(vezes_jogado)
-        titulo("Tchau...")
+        salvar_jogadores(jogadores)
+        titulo('Ate a proxima!')
         break
-    elif opcao == '1':
-        jogar_adivinhe()
 
-    elif opcao == '2':
-        jogar_ppt()
+    if opcao == '5':
+        menu_jogadores(jogadores)
     else:
-        print('Opção inválida! Tente novamente.')
+        indice = int(opcao) - 1
+        vezes_jogado[indice] += 1
 
-indice = int(opcao) - 1
-vezes_jogado[indice] = vezes_jogado[indice] + 1
+        if opcao == '1':
+            jogar_adivinhe()
+        elif opcao == '2':
+            jogar_ppt()
+        elif opcao == '3':
+            jogar_parimpar()
+        elif opcao == '4':
+            jogar_toupeira()
+
+        input('Pressione Enter para voltar ao menu... ')
