@@ -9,6 +9,7 @@ import sys
 from random import randint
 from time import sleep, time
 from telas import titulo, linha
+from modulos import ler_texto
 
 
 def tecla_pressionada():
@@ -34,7 +35,10 @@ def limpar_teclado():
 
 def jogar_toupeira():
     titulo('JOGO CAÇA A TOUPEIRA')
-    print('Pegue as 5 toupeiras para ganhar!')
+    
+    # Usa ler_texto para pegar o nome e cumprir a regra do modulos.py
+    nome = ler_texto('Digite seu apelido para jogar')
+    print(f'Boa sorte, {nome}! Pegue as 5 toupeiras para ganhar!')
     input('Pressione ENTER para começar...')
     
     limpar_teclado()
@@ -58,12 +62,12 @@ def jogar_toupeira():
         print('🐹')
         
         tempo_inicial = time()
-        input()
+        input() # ENTER rápido para pegar a toupeira
         tempo_final = time()
         
         tempo_reacao = tempo_final - tempo_inicial
         
-        if tempo_reacao <= 0.5:
+        if tempo_reacao <= 0.8:
             pontos += 1
             print(f'💥-🔨 {pontos}/5')
         else:

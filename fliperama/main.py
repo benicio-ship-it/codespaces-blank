@@ -15,7 +15,6 @@ from toupeira import jogar_toupeira
 from modulos import ler_opcao
 from placar import salvar_placar, carregar_placar
 from jogadores import menu_jogadores, salvar_jogadores, carregar_jogadores
-
 NOME_DO_DONO = 'BENICIO'
 NOMES_DOS_JOGOS = ['Adivinhe o Numero', 'Pedra-Papel-Tesoura', 'Par ou Impar', 'Caça a Toupeira']
 

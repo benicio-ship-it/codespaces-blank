@@ -38,4 +38,5 @@ python3 main.py
 * Nome com vírgula quebra a linha do arquivo, porque a vírgula é o separador
 
 ## Autoavaliação
-Conceito B
+
+Conceito C. Arrumei a validação do alterar no jogadores.py. Coloquei as docstrings, deixei a listagem como Top 10 e integrei o Caça a Toupeira na opção [4] do main.py. O jogadores.csv tem nomes de pessoas da sala e rodando sem erros e criei o README-meujogo.md.
