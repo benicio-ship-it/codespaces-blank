@@ -1,5 +1,5 @@
 # =======================================
-# Arquivo:       main.py
+# Arquivo:      main.py
 # Disciplina:   2026-PCAP
 # Aula:         20
 # Autor:        Benício Cordeiro
