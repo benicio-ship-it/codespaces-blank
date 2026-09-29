@@ -1,5 +1,5 @@
 /*
-Problema 1002 BeeCrowd
+Problema 1003 BeeCrowd
 2026.09.22
 Benício Cordeiro
 */

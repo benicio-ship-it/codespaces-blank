@@ -1,6 +1,6 @@
 /*
 Problema 1001 BeeCrowd
-2026.09.22
+2026.09.29
 Benício Cordeiro
 */
 
