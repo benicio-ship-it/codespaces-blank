@@ -1,2 +1,4 @@
 prog-c/*
-!prog-c/*.c
+!prog-c/*.
+fliperama-c/*
+!fliperama-c/*.c
