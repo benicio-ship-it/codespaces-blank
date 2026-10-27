@@ -14,7 +14,7 @@
 #define DONO "Benício"
 #define CAPACIDADE 50
 #define TAM_APELIDO 20
-#define ARQUIVO_DADOS "jogadores.txt"
+#define ARQUIVO_DADOS "jogadores.csv"
 
 void linha() {
     printf("==================================================\n");
